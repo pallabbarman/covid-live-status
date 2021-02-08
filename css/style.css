@@ -1,4 +1,29 @@
+#countries, #globalCase{
+    display: flex; 
+    flex-wrap: wrap;
+    padding:0 50px;
+    grid-gap: 60px;
+    justify-content: center;
+    margin-top: 50px;
+}
 .country{
-    padding: 50px;
-    margin:50px
+    border: 1px darkgray;
+    border-radius: 10px;
+    width: 400px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px gray;
+    font-weight: 700;
+}
+.country:hover{
+    background-color: moccasin;
+}
+.country img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.country p{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
 }
