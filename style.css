@@ -10,12 +10,12 @@
     border: 1px darkgray;
     border-radius: 10px;
     width: 400px;
-    background-color: whitesmoke;
+    background-color: silver;
     box-shadow: 5px 5px 10px gray;
     font-weight: 700;
 }
 .country:hover{
-    background-color: moccasin;
+    background-color: whitesmoke;
 }
 .country img{
     width: 400px;
@@ -26,4 +26,25 @@
     width: 50%;
     float: left;
     padding-left: 10px;
+}
+#totalCase{
+    background-color: dimgray;
+    padding: 10px;
+}
+#totalCase:hover{
+    background-color: grey;
+}
+#totalDeath{
+    background-color: rgb(202, 13, 13);
+    padding: 10px;
+}
+#totalDeath:hover{
+    background-color: red;
+}
+#totalRecovered{
+    background-color: green;
+    padding: 10px;
+}
+#totalRecovered:hover{
+    background-color: rgb(26, 187, 26);
 }

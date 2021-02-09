@@ -7,11 +7,10 @@ fetch('https://api.covid19api.com/summary')
 // display global cases 
 const displayGlobal = global => {
     const globalCase = document.getElementById('globalCase');
-    console.log(global.NewConfirmed);
     globalCase.innerHTML = `
-    <h2>Total Case: ${global.TotalConfirmed}</h2>
-    <h2>Total Deaths: ${global.TotalDeaths}</h2>
-    <h2>Total Recovered: ${global.TotalRecovered}</h2>`;
+    <h2 id="totalCase" class="country text-center">Global Confirmed <br><br> ${global.TotalConfirmed}</h2>
+    <h2 id="totalDeath" class="country text-center">Global Deaths <br><br> ${global.TotalDeaths}</h2>
+    <h2 id="totalRecovered" class="country text-center">Global Recovered <br><br> ${global.TotalRecovered}</h2>`;
 }
 
 // call api   critical
@@ -24,7 +23,6 @@ fetch('https://disease.sh/v3/covid-19/countries')
 const displayCountries = countries => {
     const countriesList = document.getElementById('countries');
     countries.forEach(country => {
-        console.log(country.country);
         const countryDetails = document.createElement('div');
         countryDetails.className = 'country';
         const countryInfo = `
